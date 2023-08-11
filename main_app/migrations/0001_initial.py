@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('name', models.CharField(max_length=100)),
                 ('type', models.CharField(max_length=100)),
                 ('color', models.CharField(max_length=100)),
-                ('age', models.IntegerField()),
+                ('age', models.IntegerField()), 
             ],
         ),
         migrations.CreateModel(
