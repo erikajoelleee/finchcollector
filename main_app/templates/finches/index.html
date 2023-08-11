@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>All Finches</h1>
+
+{% for finch in finches %}
+<a href="{% url 'detail' finch.id %}">
+<div class = 'finches'>
+<p class ='name'>{{finch.name}}</p>
+<p>Type: {{finch.type}}</p>
+<p>Color: {{finch.color}}</p>
+<p>Age: {{finch.age}}</p>
+</div>
+</a>
+{% endfor %}
+
+{% endblock %}

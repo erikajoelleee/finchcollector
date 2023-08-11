@@ -1,0 +1,56 @@
+body {
+    padding-top: 70px; 
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ba4d4d;
+    padding: 1rem;
+  }
+
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+  }
+
+  nav a:hover {
+    background-color: #5d2121;
+  }
+  nav ul {
+    list-style: none; 
+    display: inline; 
+  }
+  nav li {
+    display: inline-block; 
+    margin: 0; 
+  }
+
+  .page-footer {
+    background-color: #343a40; 
+    color: #f8f9fa;
+  }
+  .finches{
+   border: 1px solid black;
+   border-radius: 20%;
+   padding: 1rem;
+   background-color: #d1deeb;
+   text-align: center
+  }
+  .name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  h1,h2{
+    text-align: center;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    background-color: teal;
+    color: white;
+    font-size: 16px; 
+    border-radius: 5px;
+  }
