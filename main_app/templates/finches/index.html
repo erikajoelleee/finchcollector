@@ -1,15 +1,22 @@
 {% extends 'base.html' %}
 {% block content %}
-<h1>All Finches</h1>
+
+<h1>Finch List</h1>
 
 {% for finch in finches %}
 <a href="{% url 'detail' finch.id %}">
-<div class = 'finches'>
-<p class ='name'>{{finch.name}}</p>
-<p>Type: {{finch.type}}</p>
-<p>Color: {{finch.color}}</p>
-<p>Age: {{finch.age}}</p>
-</div>
+  <div class="card">
+    <div class="card-content">
+      <span class="card-title">{{ finch.name }}</span>
+      <p>Breed: {{ finch.breed }}</p>
+      <p>Description: {{ finch.description }}</p>
+      {% if finch.age > 0 %}
+        <p>Age: {{ finch.age }}</p>
+      {% else %}
+        <p>Age: Chick</p>
+      {% endif %}
+    </div>
+  </div>
 </a>
 {% endfor %}
 
