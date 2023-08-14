@@ -1,7 +1,7 @@
 from django.forms import ModelForm
-from .models import Feeding
+from .models import Birdseed
 
-class FeedingForm(ModelForm):
-    class Meta:
-     model = Feeding
-     fields = ['date', 'meal']
+class BirdseedForm(ModelForm):
+  class Meta:
+    model = Birdseed
+    fields = ['date', 'seed']
